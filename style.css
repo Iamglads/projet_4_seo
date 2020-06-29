@@ -11,9 +11,16 @@ a {
   outline: 0 !important;
 }
 a:hover {
-  text-decoration: none;
   cursor: pointer;
+  color: #f3976c;
 }
+
+/* style ajouté*/
+li {
+  list-style-type: none;
+}
+
+/* style ajouté*/
 .bloc {
   width: 100%;
   clear: both;
@@ -196,23 +203,29 @@ a:hover {
 }
 
 .navbar-toggle {
-    margin: 10px 10px 0 0;
-    border: 0px;
+  margin: 10px 10px 0 0;
+  border: 0px;
 }
 
 .navbar-toggle:hover {
-    background: transparent!important;
+  background: transparent !important;
 }
 
 .navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, .5);
-    width: 26px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 26px;
+}
+.navbar-collapse {
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 @media (min-width: 768px) {
   .site-navigation {
     position: absolute;
     top: 50%;
-    right: 200px;
+    right: 16px;
     transform: translate(0, -50%);
     -webkit-transform: translateY(-50%);
   }
@@ -234,6 +247,17 @@ a:hover {
     right: 0;
     margin-right: 0;
     margin-top: 20px;
+  }
+
+  .blocsapp-device-iphone5 {
+    background-size: 216px 425px;
+    padding-top: 60px;
+    width: 216px;
+    height: 425px;
+  }
+  .blocsapp-device-iphone5 img {
+    width: 180px;
+    height: 320px;
   }
 }
 .mg-md {
@@ -319,12 +343,9 @@ a,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p {
   font-family: helvetica;
-  font-weight: 400;
+  font-weight: 800;
   color: #575757 !important;
 }
 .container {
@@ -334,14 +355,14 @@ p {
   font-size: 38px;
 }
 p {
-  font-size: 11px;
+  font-size: 12px;
 }
 .tight-width-whitespace {
   max-width: 600px;
   margin: auto auto auto auto;
 }
 .h1 {
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Open Sans";
 }
 .cta-hero {
@@ -357,7 +378,7 @@ p {
   margin: auto auto auto auto;
 }
 h2 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.4em;
 }
 h3 {
@@ -381,8 +402,14 @@ h4 {
   margin-bottom: 14px;
   margin-top: 24px;
 }
-.white, .tc-white  {
+.white{
   color: #fff !important;
+  font-weight: bold;
+}
+
+.tc-white {
+  color: #F3976C !important;
+  font-weight: bold;
 }
 .portfolio-thumb {
   margin-bottom: 24px;
@@ -391,8 +418,8 @@ h4 {
   margin-bottom: 44px;
   margin-top: 50px;
 }
-.black-background {
-  background-color: rgba(165, 147, 99, 0.7);
+.black-background { 
+  background-color: rgba(165, 147, 99, 0.9); 
   padding: 40px 40px 40px 40px;
 }
 .bold-link {
@@ -450,7 +477,7 @@ h4 {
 }
 @media (max-width: 992px) and (min-width: 768px) {
   .navbar .nav {
-    max-width:  100%;
+    max-width: 100%;
   }
   .nav-center.navbar .nav {
     max-width: 100%;
@@ -543,6 +570,12 @@ h4 {
   .navbar-brand img {
     max-height: 40px;
     width: auto;
+  }
+  .navbar-collapse {
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
   .bloc {
     padding-left: 0;
