@@ -7,12 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 a {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   outline: 0 !important;
 }
 a:hover {
   cursor: pointer;
-  color: #f3976c;
+  color: #F3976C;
 }
 
 /* style ajouté*/
@@ -345,8 +345,11 @@ h2,
 h3,
 p {
   font-family: helvetica;
-  font-weight: 800;
+  font-weight: 500; 
   color: #575757 !important;
+}
+.font-weight{
+  font-weight: 500; 
 }
 .container {
   max-width: 1000px;
@@ -467,7 +470,7 @@ h4 {
   background-image: url(img/la-chouette-agence-banniere.jpg);
 }
 .bg-presentation {
-  background-image: url(img/image-de-presentation.bmp);
+  background-image: url(img/image-de-presentation.JPEG);
 }
 @media (max-width: 1024px) {
   .bloc {
@@ -483,12 +486,12 @@ h4 {
     max-width: 100%;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -504,10 +507,6 @@ h4 {
   .page-container {
     overflow-x: hidden;
     position: relative;
-  }
-  .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
   }
 }
 @media (max-width: 767px) {
