@@ -1,7 +1,14 @@
+:root {
+  --white-color: #fff;
+  --orange-color-1: #f3976c;
+  --orange-color-2: #c27956;
+  --grey-color-1: #333;
+  --black-color-1: rgba(0, 0, 0, 0.5);
+}
 body {
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: var(--white-color);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,15 +19,10 @@ a {
 }
 a:hover {
   cursor: pointer;
-  color: #F3976C;
 }
-
-/* style ajouté*/
 li {
   list-style-type: none;
 }
-
-/* style ajouté*/
 .bloc {
   width: 100%;
   clear: both;
@@ -72,7 +74,6 @@ li {
   left: 0;
   right: 0;
 }
-/*====HEADER=====*/
 .texture-paper::before {
   background: url(img/texture-paper.png);
   background-size: 280px 280px;
@@ -93,8 +94,6 @@ li {
 .d-bloc h2 a,
 .d-bloc h3 a,
 .d-bloc h4 a,
-.d-bloc h5 a,
-.d-bloc h6 a,
 .d-bloc p a {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -108,8 +107,6 @@ li {
 .d-bloc h2 a:hover,
 .d-bloc h3 a:hover,
 .d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
 .d-bloc p a:hover {
   color: rgba(255, 255, 255, 1);
 }
@@ -126,8 +123,6 @@ li {
 .l-bloc h2 a,
 .l-bloc h3 a,
 .l-bloc h4 a,
-.l-bloc h5 a,
-.l-bloc h6 a,
 .l-bloc p a {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -141,8 +136,6 @@ li {
 .l-bloc h2 a:hover,
 .l-bloc h3 a:hover,
 .l-bloc h4 a:hover,
-.l-bloc h5 a:hover,
-.l-bloc h6 a:hover,
 .l-bloc p a:hover {
   color: rgba(0, 0, 0, 1);
 }
@@ -201,18 +194,15 @@ li {
 .nav > li a:hover {
   background: 0 0;
 }
-
 .navbar-toggle {
   margin: 10px 10px 0 0;
-  border: 0px;
+  border: 0;
 }
-
 .navbar-toggle:hover {
-  background: transparent !important;
+  background: 0 0 !important;
 }
-
 .navbar-toggle .icon-bar {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--black-color-1);
   width: 26px;
 }
 .navbar-collapse {
@@ -248,17 +238,6 @@ li {
     margin-right: 0;
     margin-top: 20px;
   }
-
-  .blocsapp-device-iphone5 {
-    background-size: 216px 425px;
-    padding-top: 60px;
-    width: 216px;
-    height: 425px;
-  }
-  .blocsapp-device-iphone5 img {
-    width: 180px;
-    height: 320px;
-  }
 }
 .mg-md {
   margin-top: 10px;
@@ -274,7 +253,7 @@ li {
 .btn-d,
 .btn-d:focus,
 .btn-d:hover {
-  color: #fff;
+  color: var(--white-color);
   background: rgba(0, 0, 0, 0.3);
 }
 .btn-rd {
@@ -311,7 +290,7 @@ a[data-lightbox]:hover::before {
   margin-left: -25px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.6);
-  color: #fff;
+  color: var(--white-color);
   font-weight: 100;
   z-index: 1;
   position: absolute;
@@ -326,8 +305,8 @@ a[data-lightbox]:hover img {
 }
 .lightbox-caption {
   padding: 20px;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
+  color: var(--white-color);
+  background: var(--black-color-1);
   position: absolute;
   left: 15px;
   right: 15px;
@@ -335,21 +314,20 @@ a[data-lightbox]:hover img {
 }
 .snapshot-lb .lightbox-caption {
   padding: 0;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--black-color-1);
   background: 0 0;
 }
 .btn,
-a,
 h1,
 h2,
 h3,
 p {
   font-family: helvetica;
-  font-weight: 500; 
+  font-weight: 500;
   color: #575757 !important;
 }
-.font-weight{
-  font-weight: 500; 
+.font-weight {
+  font-weight: 500;
 }
 .container {
   max-width: 1000px;
@@ -370,7 +348,7 @@ p {
 }
 .cta-hero {
   margin-top: 22px;
-  color: #fff !important;
+  color: var(--white-color) !important;
   text-transform: uppercase;
   padding: 12px 28px 12px 28px;
   font-size: 16px;
@@ -388,7 +366,7 @@ h3 {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #333 !important;
+  color: var(--grey-color-1) !important;
 }
 .med-width-whitespace {
   max-width: 800px;
@@ -396,23 +374,22 @@ h3 {
   box-shadow: 0 0 0 #000;
 }
 h1 {
-  color: #333 !important;
+  color: var(--grey-color-1) !important;
 }
 h4 {
-  color: #333 !important;
+  color: var(--grey-color-1) !important;
 }
 .icons {
   margin-bottom: 14px;
   margin-top: 24px;
 }
-.white{
-  color: #fff !important;
-  font-weight: bold;
+.white {
+  color: var(--white-color) !important;
+  font-weight: 700;
 }
-
 .tc-white {
-  color: #F3976C !important;
-  font-weight: bold;
+  color: var(--orange-color-1) !important;
+  font-weight: 700;
 }
 .portfolio-thumb {
   margin-bottom: 24px;
@@ -421,8 +398,8 @@ h4 {
   margin-bottom: 44px;
   margin-top: 50px;
 }
-.black-background { 
-  background-color: rgba(165, 147, 99, 0.9); 
+.black-background {
+  background-color: rgba(165, 147, 99, 0.9);
   padding: 40px 40px 40px 40px;
 }
 .bold-link {
@@ -430,38 +407,33 @@ h4 {
   text-decoration: underline !important;
 }
 .bgc-white {
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 .bgc-dark-slate-blue {
   background-color: #364577;
 }
 .bgc-atomic-tangerine {
-  background-color: #f3976c;
+  background-color: var(--orange-color-1);
 }
-
 .btn-atomic-tangerine {
-  background: #f3976c;
-  color: #fff !important;
+  background: var(--orange-color-1);
+  color: var(--white-color) !important;
 }
 .btn-atomic-tangerine:hover {
-  background: #c27956 !important;
-  color: #fff !important;
+  background: var(--orange-color-2) !important;
+  color: var(--white-color) !important;
 }
 .ltc-white {
-  color: #fff !important;
+  color: var(--white-color) !important;
 }
 .ltc-white:hover {
   color: #ccc !important;
 }
 .ltc-atomic-tangerine {
-  color: #f3976c !important;
+  color: var(--orange-color-1) !important;
 }
 .ltc-atomic-tangerine:hover {
-  color: #c27956 !important;
-}
-.icon-dark-slate-blue {
-  color: #364577 !important;
-  border-color: #364577 !important;
+  color: var(--orange-color-2) !important;
 }
 .bg-lines-h2-bg {
   background-image: url(img/lines-h2-bg.png);
@@ -518,8 +490,6 @@ h4 {
   h2,
   h3,
   h4,
-  h5,
-  h6,
   p {
     padding-left: 10px !important;
     padding-right: 10px !important;
@@ -545,7 +515,7 @@ h4 {
   .nav > li {
     margin-top: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    background: rgba(0, 0, 0, 0.05);
+    background: var(--black-color-1);
     text-align: left;
     padding-left: 15px;
     width: 100%;
