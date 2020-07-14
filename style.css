@@ -126,8 +126,7 @@ li {
 .l-bloc p a {
   color: rgba(0, 0, 0, 0.6);
 }
-.l-bloc .a-btn:hover,
-.l-bloc .navbar a:hover,
+
 .l-bloc .navbar-brand:hover,
 .l-bloc a:hover .icon-lg,
 .l-bloc a:hover .icon-md,
@@ -138,6 +137,11 @@ li {
 .l-bloc h4 a:hover,
 .l-bloc p a:hover {
   color: rgba(0, 0, 0, 1);
+}
+
+.l-bloc .navbar a:hover{
+  color: var(--orange-color-1);
+
 }
 .voffset {
   margin-top: 30px;
